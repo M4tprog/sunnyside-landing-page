@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 800px;
+    background-image: url('../images/desktop/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    padding: 40px 32px;
+    align-items: center;
+    line-height: 32px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu .item {
+    padding: 0 24px;
+    font-size: 0.8rem;
+}
+
+.menu .item a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.menu ul .logo {
+    flex: 1;
+}
+
+.menu ul .item .contact {
+    font-size: 0.9rem;
+    font-family: 'Fraunces', serif;
+    color: var(--very-dark-desaturated-blue);
+    text-transform: uppercase;
+    background-color: var(--white);
+    padding: 12px 20px;
+    border-radius: 24px;
+}
+
+.header-center {
+    text-align: center;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.header-center .title {
+    font-size: 3rem;
+    font-family: 'Fraunces', serif;
+    color: var(--white);
+    text-transform: uppercase;
+}
