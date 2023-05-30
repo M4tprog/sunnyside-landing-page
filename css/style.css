@@ -6,6 +6,8 @@
     --dark-desaturated-cyan: hsl(167, 40%, 24%);
     --dark-blue: hsl(198, 62%, 26%);
     --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --dark-moderate-blue: hsl(198, 63%, 38%);
+    --light-cyan: #81cab9;
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
     --very-dark-grayish-blue: hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(232, 10%, 55%);
@@ -20,7 +22,7 @@ body {
 }
 
 .header {
-    height: 800px;
+    height: 100vh;
     background-image: url('../images/desktop/image-header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,7 +40,7 @@ body {
 
 .menu .item {
     padding: 0 24px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .menu .item a {
@@ -62,10 +64,10 @@ body {
 
 .header-center {
     text-align: center;
-    background-color: red;
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 150px;
+    flex-direction: column;
 }
 
 .header-center .title {
@@ -73,4 +75,204 @@ body {
     font-family: 'Fraunces', serif;
     color: var(--white);
     text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.header-center .arrow-box {
+    margin-top: 175px;
+}
+
+.information-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.information-box.second-line {
+    margin-top: -2px;
+}
+
+.information-box.third-line {
+    margin-top: -10px;
+}
+
+.information img {
+    width: 100%;
+}
+
+.information-text-box {
+    position: relative;
+}
+
+.information-text {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.information-text.second {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+}
+
+.information-left,
+.information-right {
+    text-align: center;
+    position: relative;
+}
+
+.information-left-text-box,
+.information-right-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.information-left-text-box .subtitle {
+    color: var(--dark-desaturated-cyan);
+}
+
+.information-left-text-box .text {
+    color: var(--dark-moderate-cyan);
+}
+
+.information-right-text-box .subtitle {
+    color: var(--dark-blue);
+}
+
+.information-right-text-box .text {
+    color: var(--dark-moderate-blue);
+}
+
+.client-testimonials {
+    padding: 15vh 30px;
+    text-align: center;
+}
+
+.client-testimonials .subtitle {
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+}
+
+.client-testimonials-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.client-information {
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.client-information .text {
+    letter-spacing: 0;
+    color: var(--dark-grayish-blue);
+    font-size: 1rem;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.photos img {
+    width: 100%;
+}
+
+footer {
+    height: 400px;
+    background-color: var(--light-cyan);
+    position: relative;
+    text-align: center;
+}
+
+footer .footer-box {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .footer-box .logo {
+    width: 15%;
+}
+
+footer .footer-box .footer-menu {
+    margin: 40px 0 100px;
+}
+
+footer .footer-box .footer-menu ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-box .footer-menu ul li{
+    padding: 0 25px;
+}
+
+footer .footer-box .footer-menu ul li a{
+    color: var(--dark-moderate-cyan);
+    text-decoration: none;
+}
+
+footer .footer-box .social-media{
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-box .social-media a{
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+.subtitle {
+    font-family: 'Fraunces', serif;
+    color: var(--very-dark-desaturated-bluerated-blue);
+    font-weight: 900;
+    font-size: 2.175rem;
+    line-height: 1.4;
+}
+
+.text {
+    line-height: 1.5;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 1.2px;
+    margin: 40px 0 40px;
+}
+
+.link {
+    font-family: 'Fraunces', serif;
+    color: var(--very-dark-desaturated-blue);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration-color: var(--yellow);
+    text-decoration-thickness: 2.5px;
+    text-decoration-line: underline;
+}
+
+.client-picture {
+    width: 80px;
+    border-radius: 80px;
+}
+
+.client-function {
+    font-size: 0.8rem;
+    color: var(--grayish-blue);
+}
+
+.client-name.subtitle {
+    color: var(--very-dark-desaturated-blue);
+    text-transform: capitalize;
+    font-size: 1.175rem;
+    letter-spacing: 0;
+    margin: 60px 0 15px;
 }
